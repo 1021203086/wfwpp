@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mid_school_picture"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/lost_option1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lost_option"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:id="@+id/lost_option2"
+        android:layout_below="@id/lost_option1"
+        android:layout_marginTop="40dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lost_option2"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>

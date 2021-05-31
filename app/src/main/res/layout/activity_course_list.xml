@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridLayout
+        android:id="@+id/course_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="8"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        tools:context=".CourseTable">
+        <TextView
+            android:text="课程\n号"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:layout_columnWeight="3"
+            android:layout_column="0"
+            />
+        <TextView
+            android:text="课程\n名"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:layout_columnWeight="3"
+            android:layout_column="1"
+            />
+        <TextView
+            android:text="课序\n号"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:layout_columnWeight="1"
+            android:layout_column="2"
+            />
+        <TextView
+            android:text="学\n分"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:layout_columnWeight="1"
+            android:layout_column="3"
+            />
+        <TextView
+            android:text="属\n性"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:layout_columnWeight="1"
+            android:layout_column="4"
+            />
+        <TextView
+            android:text="教\n师"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:layout_columnWeight="2"
+            android:layout_column="5"
+            />
+        <TextView
+            android:text="时\n间"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:layout_columnWeight="3"
+            android:layout_column="6"
+            />
+        <TextView
+            android:text="地\n点"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:layout_columnWeight="3"
+            android:layout_column="7"
+            />
+
+
+
+    </GridLayout>
+</ScrollView>

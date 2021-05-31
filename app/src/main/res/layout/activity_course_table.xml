@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<GridLayout
+    android:id="@+id/course_table_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="6"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:rowCount="15"
+    tools:context=".CourseTable">
+
+<!--        <TextView-->
+<!--            android:text="节次"-->
+<!--            android:layout_columnWeight="3"-->
+<!--            android:layout_rowWeight="2"-->
+<!--            android:layout_margin="1dp"-->
+<!--            />-->
+
+
+    <TextView
+        android:layout_columnWeight="3"
+        android:layout_column="1"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="星期一" />
+
+    <TextView
+        android:layout_columnWeight="3"
+        android:layout_column="2"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="星期二" />
+
+    <TextView
+        android:layout_columnWeight="3"
+        android:layout_column="3"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="星期三" />
+
+    <TextView
+        android:layout_columnWeight="3"
+        android:layout_column="4"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="星期四" />
+
+    <TextView
+        android:layout_columnWeight="3"
+        android:layout_column="5"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="星期五" />
+
+    <!--    <TextView-->
+    <!--        android:text="星期六"-->
+    <!--        android:layout_columnWeight="3"-->
+    <!--        android:layout_margin="1dp"-->
+    <!--        />-->
+
+    <TextView
+        android:layout_row="1"
+        android:minHeight="50dp"
+        android:layout_rowWeight="2"
+        android:layout_column="0"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="  一  "
+        />
+
+    <TextView
+        android:layout_row="2"
+        android:minHeight="50dp"
+        android:layout_rowWeight="2"
+        android:layout_column="0"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="  二  " />
+
+    <TextView
+        android:layout_row="3"
+        android:minHeight="50dp"
+        android:layout_rowWeight="2"
+        android:layout_column="0"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="  三  " />
+
+    <TextView
+        android:layout_row="4"
+        android:minHeight="50dp"
+        android:layout_rowWeight="2"
+        android:layout_column="0"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="  四  " />
+    <TextView
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_columnSpan="6"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="干中饭时间"/>
+
+    <TextView
+        android:layout_row="6"
+        android:minHeight="50dp"
+        android:layout_rowWeight="2"
+        android:layout_column="0"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="  五  " />
+
+    <TextView
+        android:layout_row="7"
+        android:minHeight="50dp"
+        android:layout_rowWeight="2"
+        android:layout_column="0"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="  六  " />
+
+    <TextView
+        android:layout_row="8"
+        android:minHeight="50dp"
+        android:layout_rowWeight="2"
+        android:layout_column="0"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="  七  " />
+
+    <TextView
+        android:layout_row="9"
+        android:minHeight="50dp"
+        android:layout_rowWeight="2"
+        android:layout_column="0"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="  八  " />
+
+    <TextView
+        android:layout_row="10"
+        android:minHeight="50dp"
+        android:layout_rowWeight="2"
+        android:layout_column="0"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="  九  " />
+
+    <TextView
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_row="11"
+        android:layout_column="0"
+        android:layout_columnSpan="6"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="干晚饭时间"/>
+
+    <TextView
+        android:layout_row="12"
+        android:minHeight="50dp"
+        android:layout_rowWeight="2"
+        android:layout_column="0"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="  十  " />
+
+    <TextView
+        android:layout_row="13"
+        android:minHeight="50dp"
+        android:layout_rowWeight="2"
+        android:layout_column="0"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="十一" />
+
+    <TextView
+        android:layout_row="14"
+        android:minHeight="50dp"
+        android:layout_rowWeight="2"
+        android:layout_column="0"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:text="十二" />
+
+</GridLayout>
+</ScrollView>

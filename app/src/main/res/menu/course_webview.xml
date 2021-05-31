@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/course_import"
+        android:icon="@drawable/course_webview"
+        android:title="@string/course_import"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/course_refresh"
+        android:icon="@drawable/course_refresh"
+        android:title="@string/course_refresh"
+        app:showAsAction="ifRoom"/>
+
+</menu>

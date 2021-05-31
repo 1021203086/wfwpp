@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="20dp">
+    <ImageView
+        android:id="@+id/pic_motto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/school_motto"/>
+
+    <EditText
+        android:id="@+id/ed_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:hint="@string/ed_1"
+        android:background="@drawable/ed_frame"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/pic_motto"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/ed_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:hint="@string/ed_2"
+        android:background="@drawable/ed_frame"
+        android:inputType="textPassword"
+        android:layout_below="@+id/ed_1"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textSize="20dp"
+        android:backgroundTint="#BE281E"
+        android:layout_below="@id/ed_2"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/login_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tips_header"
+        android:layout_marginTop="20dp"
+        android:text="@string/login_tips"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/tips_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_login"
+        android:text="@string/tips_header"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

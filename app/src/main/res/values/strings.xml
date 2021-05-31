@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">微服务Plus</string>
+    <string name="act1">健康不用每日报</string>
+    <string name="act2">青年不想大学习</string>
+    <string name="act3">课表查询</string>
+    <string name="act4">校园网相关</string>
+    <string name="act5">校园卡明细</string>
+    <string name="act6">校园卡挂失招领</string>
+    <string name="explain1">以下为暂定内容，点此登录</string>
+    <string name="ed_1">13位学号</string>
+    <string name="ed_2">微服务密码</string>
+    <string name="ed_autosign">邮箱(用于发送通知)</string>
+    <string name="ed_autoname">姓名(用于找回密码)</string>
+    <string name="menu_quit">退出登录</string>
+    <string name="menu_about">关于此软件</string>
+    <string name="login_tips">为了精(tōu)简(lǎn)代码，未对学号与密码进行核验，请小主自行前往微服务及教务处进行核对，初始教务处与微服务密码为身份证后6位，本软件所有功能默认使用初始密码!</string>
+    <string name="tips_header">登录提示</string>
+    <string name="net_option1">校园网套餐变更</string>
+    <string name="net_option2">校园网终端强制下线</string>
+    <string name="net_option3">校园网信息\n(需连接校园网)</string>
+    <string name="lost_option">校园卡挂失</string>
+    <string name="lost_option2">校园卡招领</string>
+    <string name="course_import">导入</string>
+    <string name="course_refresh">刷新</string>
+</resources>

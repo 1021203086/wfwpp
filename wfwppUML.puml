@@ -1,0 +1,85 @@
+@startuml
+class com.cecel.wfwpp.LoginActivity {
+- Button buttonLogin
+- EditText username
+- EditText password
+- FileOutputStream out
+# void onCreate(Bundle)
+}
+class com.cecel.wfwpp.AutoSign {
+- String email
+- String name
+- String username
+- String password
+- String timeOption
+- int submitOption
+- int timeChoose
+- EditText emailText
+- EditText nameText
+- RadioGroup radioGroup
+- RadioGroup radioGroup1
+~ MyHandler handler
+# void onCreate(Bundle)
++ void sendRequest()
++ void cancelRequest()
+}
+class com.cecel.wfwpp.AutoSign.MyHandler {
+~ WeakReference<AutoSign> mActivity
++ void handleMessage(Message)
+}
+class com.cecel.wfwpp.TrustAllCerts {
++ void checkClientTrusted(X509Certificate[],String)
++ void checkServerTrusted(X509Certificate[],String)
++ X509Certificate[] getAcceptedIssuers()
++ {static} SSLSocketFactory createSSLSocketFactory()
+}
+class com.cecel.wfwpp.TrustAllCerts.TrustAllHostnameVerifier {
++ boolean verify(String,SSLSession)
+}
+class com.cecel.wfwpp.FileOptions {
++ {static} void saveToFile(FileOutputStream,String,String)
++ {static} String loadFromFile(FileInputStream)
+}
+class com.cecel.wfwpp.BuildConfig {
++ {static} boolean DEBUG
++ {static} String APPLICATION_ID
++ {static} String BUILD_TYPE
++ {static} int VERSION_CODE
++ {static} String VERSION_NAME
+}
+class com.cecel.wfwpp.ExampleInstrumentedTest {
++ void useAppContext()
+}
+class com.cecel.wfwpp.ExampleUnitTest {
++ void addition_isCorrect()
+}
+class com.cecel.wfwpp.WebviewTest {
+- String username
+- String password
++ String execution
+# void onCreate(Bundle)
+}
+class com.cecel.wfwpp.MainActivity {
+- boolean isLogin
+- String username
+- String password
+- FileInputStream in
+# void onCreate(Bundle)
++ void onClick(View)
+# void onActivityResult(int,int,Intent)
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
+}
+
+
+androidx.appcompat.app.AppCompatActivity <|-- com.cecel.wfwpp.LoginActivity
+androidx.appcompat.app.AppCompatActivity <|-- com.cecel.wfwpp.AutoSign
+com.cecel.wfwpp.AutoSign +.. com.cecel.wfwpp.AutoSign.MyHandler
+com.cecel.wfwpp.Handler <|-- com.cecel.wfwpp.AutoSign.MyHandler
+javax.net.ssl.X509TrustManager <|.. com.cecel.wfwpp.TrustAllCerts
+com.cecel.wfwpp.TrustAllCerts +.. com.cecel.wfwpp.TrustAllCerts.TrustAllHostnameVerifier
+com.cecel.wfwpp.HostnameVerifier <|.. com.cecel.wfwpp.TrustAllCerts.TrustAllHostnameVerifier
+androidx.appcompat.app.AppCompatActivity <|-- com.cecel.wfwpp.WebviewTest
+com.cecel.wfwpp.OnClickListener <|.. com.cecel.wfwpp.MainActivity
+androidx.appcompat.app.AppCompatActivity <|-- com.cecel.wfwpp.MainActivity
+@enduml

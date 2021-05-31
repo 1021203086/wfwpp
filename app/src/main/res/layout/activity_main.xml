@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mid_school_picture"
+
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/bt_to_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/explain1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:backgroundTint="#CCCCCC"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/jkmrb"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/act1" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/qndxx"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="@string/act2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/kbcx"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/act3" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/xywxg"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="@string/act4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/xykmx"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/act5" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/xykgszl"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="@string/act6" />
+    </LinearLayout>
+
+</LinearLayout>
